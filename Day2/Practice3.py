@@ -1,0 +1,1 @@
+#Create a variable num = "25" (a string). Convert it to an integer and add 5 to it. Print the result
