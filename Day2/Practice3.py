@@ -11,4 +11,8 @@ print(converted)
 print(rounded)
 
 #Take two numbers as input (they will be strings by default). Convert both to float, multiply them, and print the result.
+first_number = float(input("Enter First number "))
+second_number = float(input("Enter Second number "))
+
+print(first_number*second_number)
 
