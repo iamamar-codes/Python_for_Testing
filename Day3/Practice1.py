@@ -30,6 +30,13 @@ square_number = int(input("Enter a Number "))
 result = square_number ** 2
 print(f"{result} is the Square value of {square_number}")
 
-
+#Take a number as input and check whether it is positive, negative, or zero.
+my_num = int(input("enter a number "))
+if my_num >0:
+    print("positive")
+elif my_num <0:
+    print("negative")
+else:
+    print("zero")
 
 
