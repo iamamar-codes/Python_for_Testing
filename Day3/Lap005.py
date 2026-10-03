@@ -1,4 +1,4 @@
-#<,>,=>,<= Relational operators
+#<,>,=>,<=,==,!= Relational operators
 x = 100
 y = 120
 print("X and y is greater" if x>y else "Y is greater")
