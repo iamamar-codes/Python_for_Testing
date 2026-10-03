@@ -13,3 +13,7 @@ if 'a' in my_str3:
     print("Letter 'a' is present")
 else:
     print("Letter 'a' is not present")
+
+#Take your full name as input and print only the first 3 letters.
+my_str4 = input("Enter your full name ")
+print(my_str4[0:3])
