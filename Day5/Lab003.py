@@ -15,3 +15,8 @@ def show_details(**details):
          print(f"{key}: {value}") #print in the key and value form using for loop
 show_details(name="Amar", course="ST", insitute="PS")
 
+def show_name(**details):
+    for key, value in details.items():
+        print(f"{key}: {value}")
+show_name(firstName="Amar", lastName="Kushwaha")
+
