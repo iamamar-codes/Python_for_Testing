@@ -10,7 +10,7 @@ def greet_full_name(firstname, lastname):
 greet_full_name("Amar", "Kushwaha")
 
 
-#Arbitrary Arguments, *args
+#Arbitrary Arguments, *args: unlimited arguments
 def car_collection(*cars):
     print("My first car ", cars[0])
     print("My Second car ", cars[1])
