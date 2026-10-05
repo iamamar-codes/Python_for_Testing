@@ -21,12 +21,14 @@ name = input("Enter your name: ")
 account_number = int(input("Enter your Account Number: "))
 balance = int(input("Enter your Account balance: "))
 
-bankAcc = BankAccount(name, account_number, balance)
-bankAcc.details()
-bankAcc.deposit()
+bankAcc = BankAccount(name, account_number, balance)  #variables
+bankAcc.details()       #Method
+bankAcc.deposit()       #Method
+
 
 
 #Balance fixed here--------------------------------------------------------------------------------------------------
+print("\n")
 class BankAccount:
     def __init__(self, name, account_number):
         self.name = name
