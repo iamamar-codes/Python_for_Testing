@@ -1,15 +1,15 @@
 #Write a function that counts how many vowels (a, e, i, o, u) are in a given string.
-class CountVowels:
-    def __init__(self, value):
-        self.value = value
-
-    def count_vowels(self):
+class FindVowels:
+    def __init__(self,word):
+        self.word = word
+    def count(self):
         count = 0
-        for c in self.value.lower():
-            if c in "aeiou":
+        for c in self.word:
+            if c in "aeiouAEIOU":
                 count +=1
         return count
+word= input("Enter your word here: ")
 
-value = input("Enter your string: ")
-obj = CountVowels(value)
-print("Number of vowels:",obj.count_vowels())
+obj1= FindVowels(word)
+print(obj1.count())
+
