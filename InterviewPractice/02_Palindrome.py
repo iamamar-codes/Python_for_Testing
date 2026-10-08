@@ -4,7 +4,7 @@ class Function:
         self.string = string
 
     def display(self):
-        my_string = self.string.upper()       #casefold() used for convert first character upper to lower ex. Amar --> amar
+        my_string = self.string.upper()   #casefold() used for convert first character upper to lower ex. Amar --> amar
         reverse = self.string[::-1].upper()
         if my_string == reverse:
             print("String is Palindrome")
