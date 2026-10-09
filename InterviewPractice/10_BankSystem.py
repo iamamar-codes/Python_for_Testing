@@ -5,9 +5,6 @@ class BankAccount:
     def deposit(self, deposit_amount):
         self.balance += deposit_amount
 
-    def check_balance(self):
-        print("Current Balance: ", self.balance)
-
     def withdraw(self, withdraw_amount):
         if withdraw_amount > self.balance:
             print("Not Enough Amount ")
@@ -15,8 +12,11 @@ class BankAccount:
             self.balance -= withdraw_amount
             print("Withdraw amount: ",withdraw_amount)
 
+    def check_balance(self):
+        print("Current Balance: ", self.balance)
 
 deposit_amount = int(input("Enter deposit amount: "))
+
 
 b1 = BankAccount()
 
