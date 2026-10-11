@@ -26,4 +26,4 @@ Wamount = int(input("withdraw : "))
 print("Withdraw amount: ", Wamount)
 obj.withdraw(Wamount)
 
-obj.check_balance()
+obj.check_balance()   #checking balance
