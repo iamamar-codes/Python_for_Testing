@@ -4,7 +4,7 @@ class Factorial:
         self.number = number
     def check_fact(self):
         fact = 1
-        for i in range(1, self.number+1):
+        for i in range(1, number+1):
             fact *= i
         return fact
 

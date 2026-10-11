@@ -4,8 +4,8 @@ class Anagrams:
         self.str1= str1
         self.str2= str2
     def check_ana(self):
-        if sorted(self.str1.upper()) == sorted(self.str2.upper()):
-            print(f"'{self.str1}','{self.str2}' -> True")
+        if sorted(str1.upper()) == sorted(str2.upper()):
+            print(f"'{str1}','{str2}' -> True")
             print("String is Anagrams")
         else:
             print(f"'{self.str1}','{self.str2}' -> False")
