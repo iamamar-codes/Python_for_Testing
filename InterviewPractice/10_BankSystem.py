@@ -1,30 +1,29 @@
 class BankAccount:
-    def __init__(self):
-        self.balance = 500
+    def __init__(self, balance):
+        self.balance = balance
+    def deposit(self,Damount):
+        self.balance =  self.balance+ Damount
 
-    def deposit(self, deposit_amount):
-        self.balance += deposit_amount
-
-    def withdraw(self, withdraw_amount):
-        if withdraw_amount > self.balance:
-            print("Not Enough Amount ")
+    def withdraw(self, Wamount):
+        if Wamount > self.balance:
+            print("not Efficiant amount")
         else:
-            self.balance -= withdraw_amount
-            print("Withdraw amount: ",withdraw_amount)
-
+            self.balance -= Wamount
     def check_balance(self):
-        print("Current Balance: ", self.balance)
+        print("Current balance: ", self.balance)
 
-deposit_amount = int(input("Enter deposit amount: "))
+balance = int(input("balance: "))
+obj = BankAccount(balance)
+print("Current balance: ", balance)
 
+Damount = int(input("Deposit: "))
+obj.deposit(Damount)
+print("Deposi amount: ", Damount)
 
-b1 = BankAccount()
+obj.check_balance()
 
-b1.deposit(deposit_amount)
-b1.check_balance()
+Wamount = int(input("withdraw : "))
+print("Withdraw amount: ", Wamount)
+obj.withdraw(Wamount)
 
-withdraw_amount = int(input("Enter withdraw amount: "))
-b1.withdraw(withdraw_amount)
-
-b1.check_balance()
-
+obj.check_balance()
