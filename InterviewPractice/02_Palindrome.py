@@ -1,17 +1,16 @@
 # Write a function that takes a string and returns True if it reads the same forwards and backwards, False otherwise.
-class Function:
-    def __init__(self, string):
-        self.string = string
-
-    def display(self):
-        my_string = self.string.upper()   #casefold() used for convert first character upper to lower ex. Amar --> amar
-        reverse = self.string[::-1].upper()
-        if my_string == reverse:
-            print("String is Palindrome")
+class Palindrome:
+    def __init__(self, my_string):
+        self.my_string = my_string
+    def check_pali(self):
+        str= self.my_string.upper()
+        reverse = self.my_string[::-1].upper()
+        if str == reverse:
+            print("String is palindrome")
         else:
             print("String is not palindrome")
 
-string = input("Enter your String: ")
+my_string= input("Enter your String: ")
+obj = Palindrome(my_string)
+obj.check_pali()
 
-obj = Function(string)
-obj.display()
