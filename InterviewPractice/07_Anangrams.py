@@ -1,16 +1,18 @@
 #sorted(): letters ko alphabetical order mein arrange karta hai.
+class Anagrams:
+    def __init__(self, str1, str2):
+        self.str1= str1
+        self.str2= str2
+    def check_ana(self):
+        if sorted(self.str1.upper()) == sorted(self.str2.upper()):
+            print(f"'{self.str1}','{self.str2}' -> True")
+            print("String is Anagrams")
+        else:
+            print(f"'{self.str1}','{self.str2}' -> False")
+            print("String is not Anagrams")
 
-my_string1 = input("Enter your String: ")
-list(my_string1)
+str1 = input("Enter your first String: ")
+str2 = input("Enter your second String: ")
 
-my_string2 = input("Enter your String: ")
-list(my_string2)
-
-if sorted(my_string1.lower()) == sorted(my_string2.lower()):
-    print(f"'{my_string1}','{my_string2}' -> True")
-    print("String is Anangrams")
-else:
-    print(f"'{my_string1}','{my_string2}' -> False")
-    print("String is not Anangrams")
-
-
+obj = Anagrams(str1, str2)
+obj.check_ana()
