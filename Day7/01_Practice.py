@@ -7,4 +7,6 @@ print(s1.name)
 print(s1.age)
 
 s1.city = "Bangalore"
-print(s1.city)
+print(s1.city)  #Add mew attribute city
+
+
