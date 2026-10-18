@@ -1,12 +1,10 @@
 # Write a function that takes a string and returns True if it reads the same forwards and backwards, False otherwise.
 class Newclass:
     def __init__(self, str):
-        self.str = str
+        self.str = str.upper()
     def main(self):
-        originalStr = self.str.upper()
-        reverse = originalStr[::-1].upper()
-
-        if originalStr == reverse:
+        reverse = self.str[::-1].upper()
+        if self.str == reverse:
             print("String is Palondrome")
         else:
             print("String is not Palidrome")
