@@ -4,6 +4,7 @@ class SecondLargestNum:
         self.l= []
     def secondLargest(self):
         for i in range(self.my_list):
+
             ele = int(input("Enter the eement: "))
             self.l.append(ele)
         print("List: ", self.l)
