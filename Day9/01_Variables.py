@@ -1,3 +1,4 @@
+#Different values with different values
 a,b,c,d = 10,20,30,40
 print(a)
 print(id(a))
