@@ -53,5 +53,7 @@ print(a)
 # print(int("5") + 3)
 # print("5" + str(3))
 
+# print(bool("False"))
+
 
 
