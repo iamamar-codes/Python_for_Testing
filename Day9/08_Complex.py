@@ -7,3 +7,6 @@ print (int(r.real)) #O/P- 3 (convert into int)
 
 print(r.imag) #O/P- 4.0
 print(int(r.imag)) #O/P- 4 (convert into int)
+
+print(type(r))
+print(bool(r))
