@@ -8,3 +8,10 @@ print(id(pi)) # Address in memory
 print(price)
 print(type(price))
 print(bool(pi))  #internal default value
+
+a=input("Enter a number")
+b=input("Enter a number")
+c=a+b
+print(a)
+print(b)
+print(c1)

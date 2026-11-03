@@ -11,3 +11,10 @@ print(id(c))
 
 print(d)
 print(id(d))
+
+a1=int(input("Enter a number"))
+b1=int(input("Enter a number"))
+
+r= a1+b1
+
+print(r)
