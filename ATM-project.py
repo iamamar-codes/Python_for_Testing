@@ -4,7 +4,6 @@ balance = 10000
 print("Welcome to the SBI ATM")
 print("Insert Card 1.Yes 2.No")
 card = int(input())
-
 if card == 1:
     print("Enter Your Pin")
     user_pin = int(input())
