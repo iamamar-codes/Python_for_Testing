@@ -1,9 +1,10 @@
-for i in range(4): #row
-    for j in range(4): #Column
+n= int(input("Enter a number for row:"))
+for i in range(n): #row
+    for j in range(n): #Column
         print("#",end="")
     print()
 print("------------------")
-for i in range(4):
-    for i in range(i+1):
+for i in range(n):
+    for j in range(i):
         print("#", end="")
     print()
