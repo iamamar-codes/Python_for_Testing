@@ -12,7 +12,7 @@ class Employees:
         print("Employee Job:",self.Ejob)
 
     @classmethod
-    def display(clg):
+    def display(cls):
         print(Employees.Company)
 
 em1 = Employees(1,"Amar Kushwaha","SDET")
