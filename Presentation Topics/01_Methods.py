@@ -1,19 +1,20 @@
-# Normal Method
-
 class Student:
-    def greet(self):
-        print("Hello")
-s1 = Student()
-s1.greet()
+    school = "XYZ SCHOOL"   #Static Variables
 
-
-#Parameterized Method
-
-class Student:
     def __init__(self,name):
-        self.name = name
-    def show(self):
-        print("Name:", self.name)
+        self.name = name     #Instance Variable
+    def show_name(self):   #Instance Method
+        print("Name:",self.name)
+    @classmethod    #class Method
+    def show_school(cls):
+        print(cls.school)
+    @staticmethod   #Static Method
+    def say_hello():
+        print("Hello")
 
-s2 = Student("Amar")
-s2.show()
+s1=Student("Amar")
+s1.show_name()
+
+Student.show_school()
+Student.say_hello()
+s1.say_hello()
