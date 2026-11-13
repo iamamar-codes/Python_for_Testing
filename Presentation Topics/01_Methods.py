@@ -1,20 +1,29 @@
-class Student:
-    school = "XYZ SCHOOL"   #Static Variables
+class Car:
+    def __init__(self):
+        self.brand="BMW"
+    def start(self): #static method
+        print("Car is Starting")
 
-    def __init__(self,name):
-        self.name = name     #Instance Variable
-    def show_name(self):   #Instance Method
-        print("Name:",self.name)
-    @classmethod    #class Method
-    def show_school(cls):
-        print(cls.school)
-    @staticmethod   #Static Method
-    def say_hello():
-        print("Hello")
+    @staticmethod
+    def move():
+        print("Car is Moving")
+    @classmethod
+    def stop(cls):
+        print("Car is Stopped")
 
-s1=Student("Amar")
-s1.show_name()
+c1=Car()
+print(c1.brand)
 
-Student.show_school()
-Student.say_hello()
-s1.say_hello()
+c1.start()
+c1.move()
+c1.stop()
+
+Car.move()
+Car.stop()
+
+Car.Start() #Error
+
+
+
+
+
