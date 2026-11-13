@@ -5,7 +5,6 @@ class Calsi:
     def add(self, a, b):
         c= a+b
         return c
-
 c1 = Calsi()
 print(c1.brand)
 print(c1.cost)
