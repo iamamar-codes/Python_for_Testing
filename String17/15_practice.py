@@ -1,0 +1,5 @@
+s= input("Enter a string: ")
+substr= input("Enter a Sunstring: ")
+first = s.find(substr)
+second= s.find(substr, first+1)
+print(second)
