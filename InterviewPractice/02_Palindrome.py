@@ -8,7 +8,21 @@ class Newclass:
             print("String is Palondrome")
         else:
             print("String is not Palidrome")
-
 str = input("Enter a String: ")
 obj = Newclass(str)
 obj.main()
+
+
+s= input("Enter a String: ")
+rev= ""
+for i in s:
+    rev= i+rev
+if str== rev:
+    print("String is Palindrome")
+else:
+    print("String is not Palindrome")
+
+
+
+
+
